@@ -7,18 +7,18 @@ void motorsetup() {
   pinMode(ML_IN2, OUTPUT);
   pinMode(ML_IN3, OUTPUT);
   pinMode(ML_IN4, OUTPUT);
-  pinMode(L_ENA, OUTPUT);
-  pinMode(L_ENB, OUTPUT);
-  pinMode(R_ENA, OUTPUT);
-  pinMode(R_ENB, OUTPUT);
+  pinMode(M4_ENA, OUTPUT);
+  pinMode(M3_ENB, OUTPUT);
+  pinMode(M1_ENA, OUTPUT);
+  pinMode(M2_ENB, OUTPUT);
   stop(500);
 
 }
 void forward(int d) {
-  analogWrite(R_ENA, SpeedM1);
-  analogWrite(R_ENB, SpeedM2);
-  analogWrite(L_ENB, SpeedM3);
-  analogWrite(L_ENA, SpeedM4);
+  analogWrite(M1_ENA, SpeedM1); //Pin speed motor1
+  analogWrite(M2_ENB, SpeedM2); //Pin speed motor2
+  analogWrite(M3_ENB, SpeedM3); //Pin speed motor3
+  analogWrite(M4_ENA, SpeedM4); //Pin speed motor4
 
   digitalWrite(MR_IN1, HIGH);  //motor1
   digitalWrite(MR_IN2, LOW);   //motor1
