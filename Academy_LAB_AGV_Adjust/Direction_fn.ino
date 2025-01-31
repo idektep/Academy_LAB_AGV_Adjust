@@ -67,13 +67,13 @@ void slide_right_backward(int d) {
 }
 
 void stop(int d) {
-  digitalWrite(MR_IN1, LOW);  //motor1
-  digitalWrite(MR_IN2, LOW);  //motor1
-  digitalWrite(MR_IN3, LOW);  //motor2
-  digitalWrite(MR_IN4, LOW);  //motor2
-  digitalWrite(ML_IN3, LOW);  //motor3
-  digitalWrite(ML_IN4, LOW);  //motor3
-  digitalWrite(ML_IN1, LOW);  //motor4
-  digitalWrite(ML_IN2, LOW);  //motor4
+  digitalWrite(MR_IN1, LOW);  //backright motor
+  digitalWrite(MR_IN2, LOW);  //backright motor
+  digitalWrite(MR_IN3, LOW);  //frontright motor
+  digitalWrite(MR_IN4, LOW);  //frontright motor
+  digitalWrite(ML_IN1, LOW);  //frontleft motor
+  digitalWrite(ML_IN2, LOW);  //frontleft motor
+  digitalWrite(ML_IN3, LOW);  //backleft motor
+  digitalWrite(ML_IN4, LOW);  //backleft motor
   delay(d);
 }
